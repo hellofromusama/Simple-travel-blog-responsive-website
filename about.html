@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/auth.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">UTravels</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="authLink"><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main style="align-content: center">
+      <section class="about-section">
+        <h1>About UTravels</h1>
+        <p>
+          UTravels connects you with the world's best travel experiences.
+          Explore destinations, plan your adventures, and share your stories
+          with our community of travel enthusiasts.
+        </p>
+      </section>
+      <section class="team">
+        <h2>Meet the Team</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <img
+              src="assets/images/team1.jpg"
+              alt="Team Member 1"
+              style="width: 150px; height: 150px"
+            />
+            <h3>Usama</h3>
+            <p>Founder &amp; Travel Expert</p>
+          </div>
+          <div class="team-member">
+            <img
+              src="assets/images/team2.jpg"
+              alt="Team Member 2"
+              style="width: 150px; height: 150px"
+            />
+            <h3>Member 2</h3>
+            <p>Destination Specialist</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 UTravels. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Makes the main element cover the full height of the viewport */
+    text-align: center;
+    margin: 0;
+  }
+
+  .about-section,
+  .team {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between team members */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  }
+
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Optional: Makes the images circular */
+    object-fit: cover;
+  }
+</style>
