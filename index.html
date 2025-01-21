@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UTravels - Your gateway to the world's best travel destinations">
+    <title>UTravels - Explore the World</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <i class="fas fa-globe-americas"></i>
+            <span>UTravels</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">
+                    <i class="fas fa-home"></i> Home
+                </a></li>
+                <li><a href="about.html">
+                    <i class="fas fa-info-circle"></i> About
+                </a></li>
+                <li><a href="blog.html">
+                    <i class="fas fa-blog"></i> Blog
+                </a></li>
+                <li><a href="gallery.html">
+                    <i class="fas fa-images"></i> Gallery
+                </a></li>
+                <li><a href="contact.html">
+                    <i class="fas fa-envelope"></i> Contact
+                </a></li>
+                <li id="authLink"><a href="login.html">
+                    <i class="fas fa-user"></i> Login
+                </a></li>
+            </ul>
+        </nav>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to UTravels</h1>
+                <p>Your gateway to the world's best destinations!</p>
+                <div class="hero-buttons">
+                    <a href="blog.html" class="btn btn-primary">
+                        <i class="fas fa-book-open"></i> Explore Blogs
+                    </a>
+                    <a href="gallery.html" class="btn btn-secondary">
+                        <i class="fas fa-camera"></i> View Gallery
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Destinations -->
+        <section class="highlights">
+            <div class="container">
+                <h2>Top Destinations</h2>
+                <div class="destinations-grid">
+                    <div class="destination-item">
+                        <img src="assets/images/Paris.jpg.webp" 
+                             alt="Eiffel Tower and cityscape of Paris" 
+                             loading="lazy">
+                        <h3>Paris, France</h3>
+                    </div>
+                    <div class="destination-item">
+                        <img src="assets/images/Maldives.jpg.webp" 
+                             alt="Overwater bungalows in crystal clear waters of Maldives" 
+                             loading="lazy">
+                        <h3>Maldives</h3>
+                    </div>
+                    <div class="destination-item">
+                        <img src="assets/images/Japan.jpg.webp" 
+                             alt="Traditional Japanese temple with Mount Fuji in background" 
+                             loading="lazy">
+                        <h3>Japan</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="features">
+            <div class="container">
+                <h2>Why Choose UTravels</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Expert Guidance</h3>
+                        <p>Professional travel experts to help plan your perfect trip</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <h3>Best Value</h3>
+                        <p>Competitive prices and exclusive travel deals</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Safe Travel</h3>
+                        <p>Your safety and comfort is our top priority</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for travel updates and exclusive offers</p>
+                <form class="newsletter-form">
+                    <input type="email" 
+                           placeholder="Enter your email" 
+                           required
+                           aria-label="Email for newsletter">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Subscribe
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-section">
+                <h3>About UTravels</h3>
+                <p>Discover the world with us. We make travel dreams come true.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 UTravels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/navbar.js" defer></script>
+    <script src="js/auth.js" defer></script>
+</body>
+</html>

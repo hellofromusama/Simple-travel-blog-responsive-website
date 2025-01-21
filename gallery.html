@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - UTravels</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="js/auth.js"></script>
+    <script defer src="js/gallery.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">UTravels</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="authLink"><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gallery-section">
+        <div class="container">
+            <h1>Travel Gallery</h1>
+            <p class="gallery-intro">Explore beautiful destinations from around the world</p>
+
+            <!-- Gallery Categories -->
+            <div class="gallery-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="nature">Nature</button>
+                <button class="category-btn" data-category="cities">Cities</button>
+                <button class="category-btn" data-category="landmarks">Landmarks</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="landmarks">
+                    <img src="assets/images/gallery1.jpg" 
+                         alt="Eiffel Tower, Paris"
+                         loading="lazy"
+                         data-description="The iconic Eiffel Tower in Paris, France">
+                    <div class="image-overlay">
+                        <h3>Eiffel Tower</h3>
+                        <p>Paris, France</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="nature">
+                    <img src="assets/images/gallery2.jpg" 
+                         alt="Maldives Beach"
+                         loading="lazy"
+                         data-description="Crystal clear waters of Maldives">
+                    <div class="image-overlay">
+                        <h3>Paradise Beach</h3>
+                        <p>Maldives</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cities">
+                    <img src="assets/images/gallery3.jpg" 
+                         alt="Tokyo Cityscape"
+                         loading="lazy"
+                         data-description="Modern cityscape of Tokyo, Japan">
+                    <div class="image-overlay">
+                        <h3>City Lights</h3>
+                        <p>Tokyo, Japan</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="landmarks">
+                    <img src="assets/images/gallery4.jpg" 
+                         alt="Great Wall of China"
+                         loading="lazy"
+                         data-description="The majestic Great Wall of China">
+                    <div class="image-overlay">
+                        <h3>Great Wall</h3>
+                        <p>China</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loading Indicator -->
+            <div class="loading-spinner hidden">
+                <div class="spinner"></div>
+                <p>Loading more images...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox hidden" id="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox-nav prev" aria-label="Previous image">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav next" aria-label="Next image">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-image">
+            <div class="lightbox-caption">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 UTravels. All rights reserved.</p>
+    </footer>
+</body>
+</html>

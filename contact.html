@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - UTravels</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/auth.js"></script>
+    <script defer src="js/contact.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">UTravels</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="authLink"><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-section">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="contact-intro">We'd love to hear from you! Fill out the form below and we'll get back to you soon.</p>
+
+            <!-- Alert Container -->
+            <div id="alertContainer"></div>
+
+            <!-- Contact Form -->
+            <div class="contact-grid">
+                <div class="form-container">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" 
+                                   id="name" 
+                                   required 
+                                   placeholder="Enter your name"
+                                   minlength="2">
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" 
+                                   id="email" 
+                                   required 
+                                   placeholder="Enter your email">
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" 
+                                      required 
+                                      placeholder="Your message here..."
+                                      minlength="10"></textarea>
+                            <span class="error-message"></span>
+                            <div class="char-count" id="charCount">0/500</div>
+                        </div>
+
+                        <button type="submit" class="btn submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader hidden"></span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>Contact Information</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Federation Square, Melbourne, VIC 3000</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+1 234 567 890</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>contact@utravels.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Map Container -->
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509044!2d144.95565181590483!3d-37.8173139797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577ea1f5f7b2c00!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1614005260021!5m2!1sen!2sau"
+                            allowfullscreen=""
+                            loading="lazy"
+                            title="Our location on Google Maps">
+                        </iframe>
+                        <div class="map-overlay">Click to interact with map</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 UTravels. All rights reserved.</p>
+    </footer>
+</body>
+</html>
